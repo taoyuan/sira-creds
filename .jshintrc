@@ -1,9 +1,9 @@
 {
-  "curly": true,
+  "curly": false,
   "eqeqeq": true,
   "immed": true,
-  "latedef": true,
-  "newcap": true,
+  "latedef": false,
+  "newcap": false,
   "noarg": true,
   "sub": true,
   "undef": true,
