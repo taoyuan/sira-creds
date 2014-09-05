@@ -1,6 +1,10 @@
 'use strict';
 
 var chai = require('chai');
+var sira = require('sira');
+var authorizer = require('sira-core').authorizer;
+var async = require('async');
+var _ = require('underscore');
 chai.config.includeStack = true;
 
 exports.t = exports.assert = chai.assert;
@@ -25,6 +29,7 @@ exports.sapp = function (options) {
 
     var sapp = new sira.Application;
     sapp.setAll(options);
+    sapp.phase(sira.boot.module('sira-core'));
     sapp.phase(sira.boot.module('./'));
     sapp.phase(sira.boot.database(options.db));
     sapp.phase(authorizer);
@@ -39,7 +44,8 @@ exports.cleanup = function (sappOrModels, done) {
         models = [sappOrModels];
     }
 
-    done = done || function () {};
+    done = done || function () {
+    };
 
     async.eachSeries(models, function (Model, callback) {
         Model.destroyAll(callback);
