@@ -42,7 +42,8 @@
         "sira-core": "^0.1.0",
         "time-grunt": "~1.0.0",
         "jugglingdb": "^0.2.14",
-        "jugglingdb-redis-hq": "latest"
+        "jugglingdb-redis-hq": "latest",
+        "fs-extra'":"latest"
     },
     "scripts": {
         "test": "grunt"

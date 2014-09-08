@@ -1,6 +1,5 @@
 "use strict";
 
-var sira = require('sira');
 var s = require('./support');
 var t = s.t;
 
@@ -44,7 +43,7 @@ describe('ApplicationCredential', function () {
                 clientID: 'facebook-client-id-1',
                 clientSecret: 'facebook-client-secret-1',
                 callbackURL: 'http://localhost:3000/auth/facebook/callback'}
-        }, function (err, cred) {
+        }, function () {
             ApplicationCredential.link(appId, 'facebook', 'oAuth 2.0', {
                 clientID: 'facebook-client-id-1',
                 clientSecret: 'facebook-client-secret-2',
@@ -76,7 +75,7 @@ describe('ApplicationCredential', function () {
             Application = sapp.model('Application');
             ApplicationCredential = sapp.model('ApplicationCredential');
             done(err);
-        })
+        });
     });
 
     beforeEach(function (done) {

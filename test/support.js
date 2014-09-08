@@ -14,7 +14,9 @@ exports.donner = function donner(n, func) {
         return func();
     }
     return function (err) {
-        if (err) throw err;
+        if (err) {
+            throw err;
+        }
         if (--n < 1) {
             func(err ? err : null);
         }
@@ -27,7 +29,7 @@ exports.sapp = function (options) {
         driver: 'redis-hq'
     };
 
-    var sapp = new sira.Application;
+    var sapp = new sira.Application();
     sapp.setAll(options);
     sapp.phase(sira.boot.module('sira-core'));
     sapp.phase(sira.boot.module('./'));

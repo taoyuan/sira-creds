@@ -1,6 +1,5 @@
 "use strict";
 
-var sira = require('sira');
 var s = require('./support');
 var t = s.t;
 
@@ -50,7 +49,7 @@ describe('UserIdentity', function () {
                 provider: 'facebook',
                 userId: user.id,
                 authScheme: 'oAuth 2.0'
-            }, function (err, identity) {
+            }, function () {
                 UserIdentity.login('facebook', 'oAuth 2.0',
                     {emails: [
                         {value: 'abc1@facebook.com'}
@@ -86,7 +85,7 @@ describe('UserIdentity', function () {
             username: 'facebook.789',
             email: '789@facebook.com',
             password: 'pass'
-        }, function (err, user) {
+        }, function () {
             UserIdentity.login('facebook', 'oAuth 2.0',
                 {emails: [
                     {value: '789@facebook.com'}
@@ -158,7 +157,7 @@ describe('UserIdentity', function () {
             UserIdentity = sapp.model('UserIdentity');
             UserCredential = sapp.model('UserCredential');
             done(err);
-        })
+        });
     });
 
     beforeEach(function (done) {
