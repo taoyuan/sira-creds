@@ -1,3 +1,3 @@
 "use strict";
 
-exports.PassportConfigurator = require('./passport-configurator');
+//exports.PassportConfigurator = require('./passport-configurator');
