@@ -1,7 +1,7 @@
 sira-creds
 ==========
 
-[![Build Status](https://img.shields.io/travis/taoyuan/sira-creds.svg?style=flat)](http://travis-ci.org/taoyuan/sira-creds)
+[![Build Status](https://img.shields.io/travis/taoyuan/sira-creds.svg?style=flat)](http://travis-ci.org/taoyuan/sira-creds) [![Greenkeeper badge](https://badges.greenkeeper.io/taoyuan/sira-creds.svg)](https://greenkeeper.io/)
 
 > Sira credentials module to support third party account linking
 
