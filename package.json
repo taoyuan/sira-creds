@@ -25,22 +25,22 @@
     "credentials"
   ],
   "dependencies": {
-    "passport": "~0.2.2",
+    "passport": "~0.4.0",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "async": "^1.2.0",
+    "async": "^3.1.0",
     "chai": "*",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-mocha-test": "~0.12.7",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-mocha-test": "~0.13.3",
     "jshint-stylish": "^2.0.0",
-    "load-grunt-tasks": "^3.2.0",
-    "mocha": "^2.2.5",
+    "load-grunt-tasks": "^5.1.0",
+    "mocha": "^6.2.0",
     "sira": "^0.1.5",
     "sira-core": "^0.1.0",
-    "time-grunt": "~1.2.1",
-    "jugglingdb": "^0.3.0",
+    "time-grunt": "~2.0.0",
+    "jugglingdb": "^2.0.1",
     "jugglingdb-redis-hq": "latest",
     "fs-extra": "latest"
   },
